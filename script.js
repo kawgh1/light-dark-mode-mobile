@@ -15,6 +15,26 @@ const imageContainer5 = document.getElementById('image-container5');
 const imageContainer6 = document.getElementById('image-container6');
 const textBox = document.getElementById('text-box');
 
+
+// helper array
+const imageContainerItems = [imageContainer1, imageContainer2, imageContainer3,
+    imageContainer4, imageContainer5, imageContainer6];
+
+// Control Navigation Animation helper method
+function navAnimation(direction1, direction2) {
+
+    navItems.forEach((nav, i) => {
+        nav.classList.replace(`slide-${direction1}-${i + 1}`, `slide-${direction2}-${i + 1}`);
+    });
+}
+
+
+
+
+
+
+
+
 // Dark or Light Images
 function imageMode(color) {
 
@@ -29,21 +49,31 @@ function imageMode(color) {
     if (color === 'dark') {
 
         // image backgrounds
-        imageContainer1.style.backgroundColor = 'rgb(10 10 10 / 40%)';
-        imageContainer2.style.backgroundColor = 'rgb(10 10 10 / 40%)';
-        imageContainer3.style.backgroundColor = 'rgb(10 10 10 / 40%)';
-        imageContainer4.style.backgroundColor = 'rgb(10 10 10 / 40%)';
-        imageContainer5.style.backgroundColor = 'rgb(10 10 10 / 40%)';
-        imageContainer6.style.backgroundColor = 'rgb(10 10 10 / 40%)';
+        // imageContainer1.style.backgroundColor = 'rgb(10 10 10 / 95%)';
+        // imageContainer2.style.backgroundColor = 'rgb(10 10 10 / 95%)';
+        // imageContainer3.style.backgroundColor = 'rgb(10 10 10 / 95%)';
+        // imageContainer4.style.backgroundColor = 'rgb(10 10 10 / 95%)';
+        // imageContainer5.style.backgroundColor = 'rgb(10 10 10 / 95%)';
+        // imageContainer6.style.backgroundColor = 'rgb(10 10 10 / 95%)';
+        imageContainerItems.forEach((imgCon) => {
+
+            imgCon.style.backgroundColor = 'rgb(10 10 10 / 95%)';
+
+        });
 
     } else {
 
-        imageContainer1.style.backgroundColor = 'rgb(255 255 255)';
-        imageContainer2.style.backgroundColor = 'rgb(255 255 255)';
-        imageContainer3.style.backgroundColor = 'rgb(255 255 255)';
-        imageContainer4.style.backgroundColor = 'rgb(255 255 255)';
-        imageContainer5.style.backgroundColor = 'rgb(255 255 255)';
-        imageContainer6.style.backgroundColor = 'rgb(255 255 255)';
+        // imageContainer1.style.backgroundColor = 'rgb(255 255 255)';
+        // imageContainer2.style.backgroundColor = 'rgb(255 255 255)';
+        // imageContainer3.style.backgroundColor = 'rgb(255 255 255)';
+        // imageContainer4.style.backgroundColor = 'rgb(255 255 255)';
+        // imageContainer5.style.backgroundColor = 'rgb(255 255 255)';
+        // imageContainer6.style.backgroundColor = 'rgb(255 255 255)';
+        imageContainerItems.forEach((imgCon) => {
+
+            imgCon.style.backgroundColor = 'rgb(255 255 255)';
+
+        });
     }
 
 }
