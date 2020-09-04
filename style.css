@@ -145,7 +145,7 @@ h2 {
 .image-container:active {
   
   transform: scale(.97);
-  background-color: rgb( 255 255 255 / 30%) !important; 
+  background-color: rgb( 255 255 255 / 40%) !important; 
   -webkit-transition: all .2s ease;
       -moz-transition: all .2s ease;
       -ms-transition: all .2s ease;
